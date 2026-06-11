@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portfolio premium Ahmad Zamroni - Mahasiswa, Pengembang Web, dan Freelancer modern. Menampilkan keahlian, pengalaman, dan proyek terbaru.">
+    <meta name="keywords" content="Ahmad Zamroni, portfolio, web developer, UI/UX, freelance, modern portfolio">
+    <meta name="author" content="Ahmad Zamroni">
+    <meta property="og:title" content="Ahmad Zamroni | Portfolio Premium">
+    <meta property="og:description" content="Portfolio interaktif dengan desain futuristik dan modern.">
+    <meta property="og:type" content="website">
+    <title>Ahmad Zamroni | Portfolio Premium 2026</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Memuat pengalaman premium...</p>
+    </div>
+</div>
+
+<!-- Particle Background Canvas -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6283135466800?text=Halo%20Ahmad%20Zamroni,%20saya%20tertarik%20dengan%20portfolio%20Anda!" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Sticky Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="#home">AZ<span>.</span></a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container glass-card">
+            <div class="hero-image">
+                <img src="https://ui-avatars.com/api/?background=0a2b2e&color=fff&bold=true&size=200&name=Ahmad+Zamroni&rounded=true&length=2&font-size=0.60" alt="Ahmad Zamroni Profile">
+            </div>
+            <h1 class="hero-name">Ahmad Zamroni</h1>
+            <div class="typing-wrapper">
+                <span class="static-text">Saya </span>
+                <span class="typed-text" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
+                <button id="download-cv-btn" class="btn btn-secondary"><i class="fas fa-download"></i> Download CV</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ahmad-zamroni313" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ahmadzamroni" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:ahmadzamroni015@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Tentang <span>Saya</span></h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>Saya Ahmad Zamroni, lahir di Probolinggo, 31 Desember 2004. Saat ini berdomisili di Malang dan aktif sebagai mahasiswa di Universitas Islam Negeri Maulana Malik Ibrahim Malang. Saya memiliki semangat tinggi untuk belajar hal baru, berkomunikasi efektif, dan bekerja dalam tim. Dengan pengalaman di bidang pelayanan pelanggan, saya mengasah soft skill serta dedikasi terhadap pekerjaan.</p>
+                    <p>Saya percaya bahwa setiap tantangan adalah peluang untuk berkembang. Portfolio ini mencerminkan perjalanan dan karya saya menuju profesionalisme di era digital 2026.</p>
+                </div>
+                <div class="personal-info glass-card">
+                    <h3>Informasi Pribadi</h3>
+                    <ul class="info-list">
+                        <li><i class="fas fa-calendar-alt"></i> <strong>Tgl Lahir:</strong> 31 Desember 2004</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Merjosari, Lowokwaru, Malang</li>
+                        <li><i class="fas fa-envelope"></i> <strong>Email:</strong> ahmadzamroni015@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> <strong>Telepon:</strong> +62 831-3546-6800</li>
+                        <li><i class="fas fa-heart"></i> <strong>Status:</strong> Belum Menikah</li>
+                        <li><i class="fas fa-flag"></i> <strong>Kewarganegaraan:</strong> Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section with Animated Counter -->
+    <section id="statistics" class="stats section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass-card">
+                    <i class="fas fa-code"></i>
+                    <span class="stat-number" data-target="15">0</span>
+                    <p>Proyek Selesai</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-briefcase"></i>
+                    <span class="stat-number" data-target="3">0</span>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-smile"></i>
+                    <span class="stat-number" data-target="25">0</span>
+                    <p>Klien Puas</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-certificate"></i>
+                    <span class="stat-number" data-target="8">0</span>
+                    <p>Sertifikat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Riwayat <span>Pendidikan</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                    <div class="timeline-content">
+                        <h3>Universitas Islam Negeri Maulana Malik Ibrahim Malang</h3>
+                        <span class="timeline-date">2022 - Sekarang</span>
+                        <p>S1 Sistem Informasi, Fakultas Sains dan Teknologi. Aktif dalam organisasi kampus dan proyek pengembangan aplikasi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                    <div class="timeline-content">
+                        <h3>SMK Raudlatul Jannah</h3>
+                        <span class="timeline-date">2019 - 2022</span>
+                        <p>Jurusan Rekayasa Perangkat Lunak (RPL). Mengembangkan dasar pemrograman, basis data, dan manajemen proyek.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Pengalaman <span>Kerja</span></h2>
+            <div class="exp-grid">
+                <div class="exp-card glass-card">
+                    <i class="fas fa-cash-register"></i>
+                    <h3>Kasir</h3>
+                    <span class="exp-date">2022 - 2023</span>
+                    <p>Bertanggung jawab atas transaksi harian, pelayanan cepat dan ramah, serta menjaga keakuratan laporan keuangan. Meningkatkan kepuasan pelanggan 20%.</p>
+                </div>
+                <div class="exp-card glass-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Crew Outlet</h3>
+                    <span class="exp-date">2023 - Sekarang</span>
+                    <p>Menangani operasional outlet, stok barang, serta memberikan pelayanan terbaik kepada pelanggan. Mengasah komunikasi tim dan problem solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills with Circular Progress Bar -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Keahlian <span>Profesional</span></h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- skill items akan di-generate via js agar rapi, tetapi tetap bisa manual -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (6 cards) -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title">Portfolio <span>Terbaru</span></h2>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- 6 project cards dummy dengan gambar, deskripsi, tombol demo & github -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificates" class="certificates section">
+        <div class="container">
+            <h2 class="section-title">Sertifikat & <span>Penghargaan</span></h2>
+            <div class="cert-grid" id="cert-grid">
+                <!-- 3 card sertifikat -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Hubungi <span>Saya</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3>Informasi Kontak</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> ahmadzamroni015@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +62 831-3546-6800</li>
+                        <li><i class="fab fa-linkedin"></i> linkedin.com/in/ahmad-zamroni313</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Merjosari, Lowokwaru, Malang</li>
+                    </ul>
+                </div>
+                <form id="contact-form" class="contact-form glass-card">
+                    <h3>Kirim Pesan</h3>
+                    <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <textarea rows="5" id="message" placeholder="Pesan Anda..." required></textarea>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">Ahmad Zamroni <span>Portfolio</span></div>
+            <p>© 2026 | Dibuat dengan <i class="fas fa-heart"></i> menggunakan teknologi modern & kreativitas tanpa batas.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/ahmad-zamroni313" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ahmadzamroni" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ahmadzamroni015@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
