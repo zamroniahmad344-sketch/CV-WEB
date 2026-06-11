@@ -194,43 +194,13 @@ function initSkillsCircular() {
     document.querySelectorAll('.circular-progress').forEach(p => progressObserver.observe(p));
 }
 
-// ==================== PORTFOLIO GENERATE (6 projects) ====================
-function generatePortfolio() {
-    const portfolioGrid = document.getElementById('portfolio-grid');
-    if(!portfolioGrid) return;
-    const projects = [
-        {title: 'NeoBank App', desc: 'Aplikasi keuangan modern dengan analitik AI.', img: 'https://picsum.photos/id/1/400/250', demo: '#', github: '#'},
-        {title: 'Portfolio 3D', desc: 'Website interaktif three.js untuk personal branding.', img: 'https://picsum.photos/id/26/400/250', demo: '#', github: '#'},
-        {title: 'EcoChain', desc: 'Blockchain untuk pelacak karbon.', img: 'https://picsum.photos/id/29/400/250', demo: '#', github: '#'},
-        {title: 'SmartDesk UI', desc: 'Dashboard IoT untuk perkantoran.', img: 'https://picsum.photos/id/20/400/250', demo: '#', github: '#'},
-        {title: 'Resep Nusantara', desc: 'Platform resep masakan tradisional.', img: 'https://picsum.photos/id/30/400/250', demo: '#', github: '#'},
-        {title: 'TravelBuddy', desc: 'Aplikasi itinerary perjalanan kolaboratif.', img: 'https://picsum.photos/id/15/400/250', demo: '#', github: '#'}
-    ];
-    let html = '';
-    projects.forEach(proj => {
-        html += `
-            <div class="portfolio-card glass-card">
-                <img src="${proj.img}" alt="${proj.title}">
-                <div class="portfolio-info">
-                    <h3>${proj.title}</h3>
-                    <p>${proj.desc}</p>
-                    <div class="portfolio-buttons">
-                        <a href="${proj.demo}" target="_blank">Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a href="${proj.github}" target="_blank">Github <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-    portfolioGrid.innerHTML = html;
-}
 
 // ==================== CERTIFICATES ====================
 function generateCertificates() {
     const certGrid = document.getElementById('cert-grid');
     if(!certGrid) return;
     const certs = [
-        {name: 'Sertifikat Komunikasi Efektif', issuer: 'BNSP', year: '2023'},
+        {name: 'Sertifikat Semangat Muda Indonesia', issuer: 'MSI', year: '2024'},
         {name: 'Fundamental Digital Marketing', issuer: 'Google Digital Garage', year: '2024'},
         {name: 'Pelayanan Prima & Customer Care', issuer: 'HIMATIF', year: '2025'}
     ];
